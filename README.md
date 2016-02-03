@@ -6,5 +6,5 @@ $ chmod +x txt_to_tab.rb
 
 **Please check example file with below command:
 
-$ ./txt_to_tab.rb Matthew.txt
+$ ./txt_to_tab.rb text-file.txt
 
