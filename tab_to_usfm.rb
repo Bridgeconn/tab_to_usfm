@@ -19,11 +19,11 @@ output_name = "#{File.basename(file_name, '.*')}.usfm"
 output = File.open(output_name, 'w')
 
 hash.each do|k, v|
-  output << "\\id #{k}\n\n"
+  output << "\\id #{k}\n"
   v.each do |k, v|
-    output << "\\c #{k}\n\n"
+    output << "\\c #{k}"
     v.each do |k, v|
-      output << "\\v #{k}\n\n"
+      output << "\\v #{k}"
     end
   end
 end
