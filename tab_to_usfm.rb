@@ -21,9 +21,9 @@ output = File.open(output_name, 'w')
 hash.each do|k, v|
   output << "\\id #{k}\n"
   v.each do |k, v|
-    output << "\\c #{k}"
+    output << "\\c #{k}\n"
     v.each do |k, v|
-      output << "\\v #{k}"
+      output << "\\v #{k}\n"
     end
   end
 end
