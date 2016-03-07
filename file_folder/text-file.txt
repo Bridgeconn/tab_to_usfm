@@ -1,4 +1,0 @@
-MAT	1	1	The book of the genealogy of Jesus Christ, the son of David, the son of Abraham
-MAT	1	2	Abraham was the father of Isaac, and Isaac the father of Jacob, and Jacob the father of Judah and his brothers
-MAT	1	3	Judah the father of Perez and Zerah by Tamar, Perez the father of Hezron, Hezron the father of Ram
-MAT	1	4	Ram was the father of Amminadab, Amminadab the father of Nahshon, Nahshon the father of Salmon
