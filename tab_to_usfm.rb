@@ -5,12 +5,13 @@ require 'csv'
 file = ARGV[0]
 ch = []
 hash = {}
-c = {}
+nc = {}
 v = {}
 h = Hash.new { |hash, key| hash[key] = [] }
 count=0
 CSV.foreach("#{file}", {:col_sep => "\t", :quote_char => "^"}) do |row|
-  h[:"#{row[1]}"] << row[2].to_s+" "+row[3]
+  sec_text = row[4]? "\\s #{row[4]}\n" : ""
+  h[:"#{row[1]}"] << sec_text+"\\v "+row[2].to_s+" "+row[3].to_s
   if count == 1
     row
   end
@@ -26,7 +27,7 @@ hash.each do |k, v|
   v.each do |k, v|
     output << "\\c #{k}\n"
     v.each do |k, v|
-      output << "\\v #{k}\n"
+      output << "#{k}\n"
     end
   end
 end
