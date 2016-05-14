@@ -21,4 +21,7 @@ $ ./tab_to_usfm.rb 1Corinthians.txt
 
 
 Developed by Uday Kumar uday.kumar@bridgeconn.com
+
+Forked and Modified by Joel Mathew joelalive@gmail.com
+
 [Bridge Connectivity Solutions](http://bridgeconn.com/)
